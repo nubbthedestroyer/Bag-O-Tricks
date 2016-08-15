@@ -1,0 +1,14 @@
+boto3==1.4.0
+botocore==1.4.46
+cffi==1.7.0
+cryptography==1.4
+docutils==0.12
+idna==2.1
+jmespath==0.9.0
+paramiko==2.0.2
+pyasn1==0.1.9
+pycparser==2.14
+python-dateutil==2.5.3
+s3transfer==0.1.1
+simplejson==3.8.2
+six==1.10.0
