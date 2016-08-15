@@ -13,4 +13,4 @@
 ### Usage
 > Called like this
 ```
-python3 -u sftptos3.py ${sftp_user} ${sftp_pass} ${sftp_host} ${s3_bucket} ${s3_path}
+python3 -u sftptos3.py ${sftp_user} ${sftp_pass} ${sftp_host} ${s3_bucket} ${s3_path} ${concurrency}
