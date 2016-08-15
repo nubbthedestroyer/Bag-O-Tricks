@@ -12,7 +12,8 @@ conf = {
     'sftp_pass': str(sys.argv[2]),
     'sftp_host': str(sys.argv[3]),
     's3_bucket': str(sys.argv[4]),
-    's3_path': str(sys.argv[5])
+    's3_path': str(sys.argv[5]),
+    'concurrency': str(sys.argv[6])
 }
 
 # Set s3 boto3 objects
@@ -105,7 +106,7 @@ def handler(event, context):
 
     # Step through files
     try:
-        pool = ThreadPool(8)
+        pool = ThreadPool(concurrency)
         pool.map(check_and_backup, files1)
         pool.close()
         pool.join()
